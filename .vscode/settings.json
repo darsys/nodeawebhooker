@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.yaml": "home-assistant"
+    },
+    "docker.host": "ssh://damon@hydra.tayoby.com"
+}
