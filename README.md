@@ -1,18 +1,17 @@
-# Docker monitoring and managment in Discord!
+# Docker node container to pass webhooks to discord
+
+## About
+
+I built this to relay webhooks from prometheus event notifier to discord
 
 ## Built With
 
-* [discord.js](https://discord.js.org/#/) - discord.js is a powerful node.js module that allows you to interact with the Discord API very easily.
-* [dockerode](https://github.com/apocas/dockerode) - Docker + Node = Dockerode (Node.js module for Docker's Remote API)
+* [discord-webhook-node](https://github.com/darsys/discord-webhook-node) Allows for easy webhook sending through discord's webhook API
+* [express](https://expressjs.com/) - Fast, unopinionated, minimalist web framework for Node.js
 
 ## Contributing
 
 Please read [CONTRIBUTING.md](contributing.md) for details on our code of conduct, and the process for submitting pull requests to us.
-
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 
 ## Authors
