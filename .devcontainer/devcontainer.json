@@ -1,7 +1,7 @@
 {
-	"name": "nodeawebhooker",
+	"name": "nodeawebhooker_devel",
 	"dockerComposeFile": "../docker-compose.yml",
-	"service": "nodeawebhooker",
+	"service": "nodeawebhooker_devel",
 	// "workspaceMount": "source=nodeawebhooker,target=/workspace,type=volume",
 	"workspaceFolder": "/workspace",
 	
