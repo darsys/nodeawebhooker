@@ -1,8 +1,8 @@
 {
-  "name": "docker_web_app",
-  "version": "1.0.0",
-  "description": "Node.js on Docker",
-  "author": "First Last <first.last@example.com>",
+  "name": "nodeawebhooker",
+  "version": "0.5.0",
+  "description": "Node js application to receive webhooks and forward to discord",
+  "author": "Damon Vincent <damon@ourcomputershop.com>",
   "main": "server.js",
   "private": true,
   "scripts": {

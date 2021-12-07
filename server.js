@@ -26,12 +26,14 @@ app.post('/', (req, res) => {
 		// .addField('instance', thisalert.labels.instance, true)
 		// .addField('job', thisalert.labels.job, true)
 		if (thisalert.hasOwnProperty('labels')) {
-				Object.keys(thisalert.labels).forEach (thiskey => {
+			console.debug("** Labels  **")
+			Object.keys(thisalert.labels).forEach (thiskey => {
 				console.log(thiskey, thisalert.labels[thiskey])
 				embed.addField(thiskey, thisalert.labels[thiskey], true)
 			})
 		}
 		if (thisalert.hasOwnProperty('annotations')) {
+			console.debug("** Annotations  **")
 			const myText = ''
 			Object.keys(thisalert.annotations).forEach(thiskey => {
 				console.log(thiskey, thisalert.annotations[thiskey])
