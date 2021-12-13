@@ -2,7 +2,7 @@
 
 require('dotenv').config();
 const WEBHOOK_URL = process.env.WEBHOOK_URL
-
+console.log(WEBHOOK_URL)
 const express = require('express')
 const { Webhook, MessageBuilder } = require('discord-webhook-node')
 const { json } = require('body-parser')

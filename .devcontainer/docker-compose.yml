@@ -1,0 +1,19 @@
+version: '3.5'
+services:
+  nodewebhooker:
+    container_name: nodewebhooker
+    image: mcr.microsoft.com/vscode/devcontainers/javascript-node:16
+    restart: unless-stopped
+    user: "${UID}:${GID}"
+    command: sleep infinity
+    volumes:
+      - ../:/workspace:cached
+    ports:
+      - "3010:3000"
+    # environment:
+    #   - PHP_TZ="America/Chicago"
+
+networks:
+  default:
+    external:
+      name: services_bridge

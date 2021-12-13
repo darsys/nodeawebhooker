@@ -1,9 +1,9 @@
 {
-	"name": "nodeawebhooker_devel",
-	"dockerComposeFile": "../docker-compose.yml",
-	"service": "nodeawebhooker_devel",
+	"name": "nodewebhooker",
+	"dockerComposeFile": "./docker-compose.yml",
+	"service": "nodewebhooker",
 	// "workspaceMount": "source=nodeawebhooker,target=/workspace,type=volume",
-	"workspaceFolder": "/workspace",
+	"workspaceFolder": "/app",
 	
 	// Set *default* container specific settings.json values on container create.
 	// "settings": { 
@@ -16,7 +16,7 @@
 	],
 	
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [3000],
+	"forwardPorts": [300],
 
 	// Specifies a command that should be run after the container has been created.
 	"postCreateCommand": "yarn install",
