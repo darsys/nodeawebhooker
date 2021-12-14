@@ -1,18 +1,17 @@
-# Docker node container to pass webhooks to discord
+# simple node application to pass webhooks to discord
 
 ## About
 
-I built this to relay webhooks from prometheus event notifier to discord
+I built this to relay webhooks from prometheus event notifier to discord using webhooks.  Prometheus sends webhooks (designed for slack) but the recommended configuration of using the slack did not work for me.
 
 ## Built With
 
-* [discord-webhook-node](https://github.com/darsys/discord-webhook-node) Allows for easy webhook sending through discord's webhook API
+* [discord-webhook-node](https://github.com/darsys/discord-webhook-node) Allows fommmr easy webhook sending through discord's webhook API
 * [express](https://expressjs.com/) - Fast, unopinionated, minimalist web framework for Node.js
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](contributing.md) for details on our code of conduct, and the process for submitting pull requests to us.
-
+Contributions welcome. Create an issue for discusion.  Play nice and give love freely. 
 
 ## Authors
 
