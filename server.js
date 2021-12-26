@@ -2,7 +2,6 @@
 
 require('dotenv').config();
 const WEBHOOK_URL = process.env.WEBHOOK_URL
-console.log(WEBHOOK_URL)
 const express = require('express')
 const { Webhook, MessageBuilder } = require('discord-webhook-node')
 const { json } = require('body-parser')
@@ -23,8 +22,6 @@ app.post('/', (req, res) => {
 		const embed = new MessageBuilder()
 		.setTimestamp(thisalert.startsAt)
 		.setTitle(myTitle)
-		// .addField('instance', thisalert.labels.instance, true)
-		// .addField('job', thisalert.labels.job, true)
 		if (thisalert.hasOwnProperty('labels')) {
 			console.debug("** Labels  **")
 			Object.keys(thisalert.labels).forEach (thiskey => {
