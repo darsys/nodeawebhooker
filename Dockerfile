@@ -4,7 +4,7 @@ WORKDIR /app
 COPY package.json yarn.lock ./
 RUN yarn install --frozen-lockfile
 
-FROM node:slim-12 as prod
+FROM node:17-alpine as prod
 
 # If possible, run your container using `docker run --init`
 # Otherwise, you can use `tini`:
